@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container {
+    background: white;
+    width: 60%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-logo {
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.sub-heading {
+    font-size: 16px;
+    color: #444;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 45px; /* Ensures consistent height */
+    box-sizing: border-box; /* Prevents unwanted sizing issues */
+}
+
+.custom-input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    color: #666;
+}
+
+.btn-primary {
+    background: #2575fc;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1a5ed2;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+/* Remember Me Checkbox Styling */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.remember-me input {
+    margin-right: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+}
