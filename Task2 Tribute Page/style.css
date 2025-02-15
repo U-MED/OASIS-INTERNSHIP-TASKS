@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.hero {
+    background: url('images\ \(3\).jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bio, .career, .misfortunes, .quotes, .gallery {
+    padding: 30px;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #222;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #bbb;
+    background: #222;
+    padding: 15px;
+    border-left: 5px solid #ffcc00;
+    display: inline-block;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 30%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    background: #333;
+    padding: 15px;
+    margin-top: 20px;
+}
