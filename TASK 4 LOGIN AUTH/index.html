@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="main-container">
+            <!-- Login Form -->
+            <div id="loginForm">
+                <h2 class="heading">Login</h2>
+                <input type="email" id="loginEmail" class="custom-input" placeholder="Enter Email" required>
+                <div class="input-container">
+                    <input type="password" id="loginPassword" class="custom-input" placeholder="Enter Password" required>
+                    <span class="toggle-password" onclick="togglePassword('loginPassword', this)">👁️</span>
+                </div>
+                <button id="loginBtn" class="btn-primary">Login</button>
+                <p id="loginError" class="error-message"></p>
+                <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" style="display: none;">
+                <h2 class="heading">Register</h2>
+                <input type="text" id="registerName" class="custom-input" placeholder="Enter Your Name" required>
+                <input type="email" id="registerEmail" class="custom-input" placeholder="Enter Email" required>
+                <div class="input-container">
+                    <input type="password" id="registerPassword" class="custom-input" placeholder="Enter Password" required>
+                    <span class="toggle-password" onclick="togglePassword('registerPassword', this)">👁️</span>
+                </div>
+                <button id="registerBtn" class="btn-primary">Register</button>
+                <p id="registerError" class="error-message"></p>
+                <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            </div>
+
+            <!-- Welcome Section (Shown After Login) -->
+            <div id="welcomeSection" style="display: none; text-align: center;">
+                <h2 id="welcomeMessage"></h2>
+                <p>You've successfully logged in to the secure page!</p>
+                <button id="logoutBtn" class="btn-primary">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
